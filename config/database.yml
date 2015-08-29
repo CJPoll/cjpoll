@@ -9,8 +9,12 @@ test:
     encoding: unicode
     database: cjpoll_test
     pool: 5
+
 production:
     adapter: postgresql
-    encoding: unicode
-    database: cjpollmaster
-    pool: 5
+    encoding: utf8
+    database: <%= ENV['RDS_DB_NAME'] %>
+    username: <%= ENV['RDS_USERNAME'] %>
+    password: <%= ENV['RDS_PASSWORD'] %>
+    host: <%= ENV['RDS_HOSTNAME'] %>
+    port: <%= ENV['RDS_PORT'] %>
