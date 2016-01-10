@@ -1,0 +1,22 @@
+{
+  "name": "cjpoll",
+  "version": "1.0.0",
+  "description": "My personal home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjpoll/cjpoll.git"
+  },
+  "author": "CJPoll <cjpoll@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjpoll/cjpoll/issues"
+  },
+  "homepage": "https://github.com/cjpoll/cjpoll#readme",
+  "dependencies": {
+    "webpack": "^1.12.10"
+  }
+}
