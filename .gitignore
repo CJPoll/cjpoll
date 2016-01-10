@@ -18,3 +18,4 @@
 
 public/assets/*
 node_modules/*
+app/assets/javascripts/application.js

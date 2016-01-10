@@ -54,7 +54,7 @@ config.module = {
 };
 
 config.output = {
-	path: path.join(__dirname, 'public'),
+	path: path.join(__dirname, 'app/assets/javascripts/'),
 	filename: '[name].js',
 	public_path: '/'
 };
