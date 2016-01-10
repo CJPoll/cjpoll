@@ -5,10 +5,10 @@
 		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
 		<%= stylesheet_link_tag 'styles-greyred', id: "theme-styles" %>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 		<%= csrf_meta_tags %>
 	</head>
 	<body>
+		<div id="application"></div>
 		<header>
 			<div class="widewrapper masthead">
 				<div class="container">
@@ -80,7 +80,8 @@
 						<h1> Cody Poll </h1>
 						<p> I'm a full-stack web developer, software engineer, blogger, and contractor. I write about stuff I enjoy, and all opinions are my own. </p>
 
-						<p> I've written software in lots of languages and frameworks. Professionally, I've used Erlang, Ruby, Javascript, and Java, but languages and frameworks are probably the least
+            <p> I've written software in lots of languages and frameworks.
+            Professionally, I've used Erlang, Elixir, Ruby, Javascript, and Java, but languages and frameworks are probably the least
 						important thing I could use to describe myself. I try to
 						write code so expressively that its intent is immediately
 						clear to the reader.  I use code that's battle tested
@@ -95,7 +96,7 @@
 						to use.
 						</p>
 
-						<p> I'm currently a software engineer at Instructure (building a Learning Management System called <a href="http://www.canvaslms.com/">Canvas</a>)</p>
+						<p> I'm currently a software engineer at Nuvi (building a Learning Management System called <a href="http://www.canvaslms.com/">Canvas</a>)</p>
 					</div>
 					<aside class="col-md-4 blog-aside">
 						<div class="aside-widget">
@@ -163,5 +164,6 @@
 				</div>
 			</div>
 		</footer>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	</body>
 </html>

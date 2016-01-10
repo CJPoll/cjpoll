@@ -23,16 +23,12 @@ config.module = {
 			loader: 'style!css'
 		},
 		{
-			test: /\.jsx$/,
-			loader: 'jsx-loader?insertPragma=React.DOM&harmony'
-		},
-		{
-			test: /\.js$/,
-			loader: 'babel-loader'
-		},
-		{
-			test: /\.jsx$/,
-			loader: 'babel-loader'
+			test: /\.jsx?$/,
+			exclude: /(node_modules|bower_components)/,
+			loader: 'babel',
+			query: {
+				presets: ['react', 'es2015']
+			}
 		},
 		{
 			test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
