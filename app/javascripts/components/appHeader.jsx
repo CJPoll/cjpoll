@@ -8,8 +8,6 @@ const AppHeader = React.createClass({
 		return (
 			<header>
 				<Masthead />
-
-				<Subheader />
 			</header>
 		);
 	}
