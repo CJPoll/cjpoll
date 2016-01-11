@@ -6,9 +6,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|PT+Serif:400,400italic' rel='stylesheet' type='text/css'>
 		<%= stylesheet_link_tag 'styles-greyred', id: "theme-styles" %>
 		<%= csrf_meta_tags %>
+		<%= stylesheet_link_tag 'application' %>
+		<%= javascript_include_tag 'application' %>
 	</head>
 	<body>
 		<div id="application"></div>
-		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	</body>
 </html>
