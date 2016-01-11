@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from 'app/javascripts/components/logo';
+import MobileNav from 'app/javascripts/components/mobileNav';
 
 const Masthead = React.createClass({
 	render() {
@@ -9,11 +10,7 @@ const Masthead = React.createClass({
 				<div className="container">
 					<Logo />
 
-					<div id="mobile-nav-toggle" className="pull-right">
-						<a href="#" data-toggle="collapse" data-target=".tales-nav .navbar-collapse">
-							<i className="fa fa-bars"></i>
-						</a>
-					</div>
+					<MobileNav />
 
 					<nav className="pull-right tales-nav">
 						<div className="collapse navbar-collapse">
