@@ -1,16 +1,13 @@
 import React from 'react';
-import imageUrl from 'app/javascripts/helpers/imageUrlHelper';
+import Logo from 'app/javascripts/components/logo';
 
 const Masthead = React.createClass({
 	render() {
-		const logoUrl = imageUrl('tales-logo.png');
 
 		return (
 			<div className="widewrapper masthead">
 				<div className="container">
-					<a href="index.html" id="logo">
-						{logoUrl}
-					</a>
+					<Logo />
 
 					<div id="mobile-nav-toggle" className="pull-right">
 						<a href="#" data-toggle="collapse" data-target=".tales-nav .navbar-collapse">
