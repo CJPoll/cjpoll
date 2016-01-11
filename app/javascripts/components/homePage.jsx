@@ -24,7 +24,7 @@ const HomePage = React.createClass({
 				to use.
 				</p>
 
-				<p> I'm currently a software engineer at Nuvi (building a Learning Management System called <a href="http://www.canvaslms.com/">Canvas</a>)</p>
+				<p> I'm currently a software engineer at <a href="http://nuvi.com">Nuvi</a>, a social media analytics company. I'm on the platform team, working with others to scale our product to handle huge amounts of incoming data from social networks.</p>
 			</div>
 		);
 	}
