@@ -5,10 +5,10 @@ webpack = require('webpack');
 
 config = module.exports = {
 	// the base path which will be used to resolve entry points
-	context: __dirname + '/app',
+	context: __dirname + '/web',
 	// the main entry point for our application's frontend JS
 	entry: {
-		application: './javascripts/index.js'
+		application: './javascripts/index.js',
 	}
 };
 
@@ -23,7 +23,6 @@ config.module = {
 			loader: 'style!css'
 		},
 		{
-			test: /\.jsx?$/,
 			exclude: /(node_modules|bower_components)/,
 			loader: 'babel',
 			query: {
@@ -32,11 +31,11 @@ config.module = {
 		},
 		{
 			test: /\.(woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
-			loader: 'url?limit=10000&mimetype=application/font-woff'
+			loader: 'url?prefix=js/&limit=10000&mimetype=application/font-woff'
 		},
 		{
 			test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-			loader: 'url?limit=10000&mimetype=application/octet-stream'
+			loader: 'url?prefix=js/&limit=10000&mimetype=application/octet-stream'
 		},
 		{
 			test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
@@ -44,15 +43,15 @@ config.module = {
 		},
 		{
 			test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-			loader: 'url?limit=10000&mimetype=image/svg+xml'
+			loader: 'url?prefix=js/^limit=10000&mimetype=image/svg+xml'
 		}
 	]
 };
 
 config.output = {
-	path: path.join(__dirname, 'app/assets/javascripts/'),
-	filename: '[name].js',
-	public_path: '/'
+	path: path.join(__dirname, 'priv/static/js'),
+	publicPath: '/js/',
+	filename: '[name].js'
 };
 
 config.resolve = {
